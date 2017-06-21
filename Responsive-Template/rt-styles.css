@@ -1,0 +1,55 @@
+/* -------Dont Touch CSS--------- */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	height: 100%;
+}
+
+#wrapper{
+	margin: 0px auto;
+	width: 1200px;
+}
+#desktop{
+	width: 100%;
+	display: block;
+}
+#tablet, #mobile{
+	display: none;
+}
+#wrapper div img{
+	width: 100%;
+	height: auto;
+}
+@media only screen and (max-width: 800px) { /*------Tablet------*/
+	#wrapper{
+	margin: 0px auto;
+	width: 768px;
+}
+	#tablet{
+	width: 100%;
+	display: block;	
+	}
+	
+	#mobile, #desktop{
+		display: none;
+	}	
+}
+
+@media only screen and (max-width: 475px) { /*------Mobile------*/
+	#wrapper{
+	margin: 0px auto;
+	width: 420px;
+	}
+	#mobile{
+	width: 100%;
+	display: block;	
+	}
+	
+	#tablet, #desktop{
+	display: none;
+	}
+}
+	
